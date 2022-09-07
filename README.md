@@ -1,10 +1,10 @@
-# raymond [![Build Status](https://secure.travis-ci.org/aymerick/raymond.svg?branch=master)](http://travis-ci.org/aymerick/raymond) [![GoDoc](https://godoc.org/github.com/aymerick/raymond?status.svg)](http://godoc.org/github.com/aymerick/raymond)
+# raymond [![Build Status](https://secure.travis-ci.org/revboss/raymond.svg?branch=master)](http://travis-ci.org/revboss/raymond) [![GoDoc](https://godoc.org/github.com/revboss/raymond?status.svg)](http://godoc.org/github.com/revboss/raymond)
 
 Handlebars for [golang](https://golang.org) with the same features as [handlebars.js](http://handlebarsjs.com) `3.0`.
 
-The full API documentation is available here: <http://godoc.org/github.com/aymerick/raymond>.
+The full API documentation is available here: <http://godoc.org/github.com/revboss/raymond>.
 
-![Raymond Logo](https://github.com/aymerick/raymond/blob/master/raymond.png?raw=true "Raymond")
+![Raymond Logo](https://github.com/revboss/raymond/blob/master/raymond.png?raw=true "Raymond")
 
 
 # Table of Contents
@@ -56,7 +56,7 @@ The full API documentation is available here: <http://godoc.org/github.com/aymer
 
 ## Quick Start
 
-    $ go get github.com/aymerick/raymond
+    $ go get github.com/revboss/raymond
 
 The quick and dirty way of rendering a handlebars template:
 
@@ -66,7 +66,7 @@ package main
 import (
     "fmt"
 
-    "github.com/aymerick/raymond"
+    "github.com/revboss/raymond"
 )
 
 func main() {
@@ -116,7 +116,7 @@ package main
 import (
     "fmt"
 
-    "github.com/aymerick/raymond"
+    "github.com/revboss/raymond"
 )
 
 func main() {
@@ -200,7 +200,7 @@ package main
 import (
   "fmt"
 
-  "github.com/aymerick/raymond"
+  "github.com/revboss/raymond"
 )
 
 func main() {
@@ -308,7 +308,7 @@ raymond.RegisterHelper("link", func(url, text string) raymond.SafeString {
 tpl := raymond.MustParse("{{link url text}}")
 
 ctx := map[string]string{
-    "url":  "http://www.aymerick.com/",
+    "url":  "http://www.revboss.com/",
     "text": "This is a <em>cool</em> website",
 }
 
@@ -319,7 +319,7 @@ fmt.Print(result)
 Output:
 
 ```html
-<a href='http://www.aymerick.com/'>This is a &lt;em&gt;cool&lt;/em&gt; website</a>
+<a href='http://www.revboss.com/'>This is a &lt;em&gt;cool&lt;/em&gt; website</a>
 ```
 
 
@@ -1315,7 +1315,7 @@ package main
 import (
     "fmt"
 
-    "github.com/aymerick/raymond/lexer"
+    "github.com/revboss/raymond/lexer"
 )
 
 func main() {
@@ -1357,8 +1357,8 @@ package main
 import (
     "fmt"
 
-    "github.com/aymerick/raymond/ast"
-    "github.com/aymerick/raymond/parser"
+    "github.com/revboss/raymond/ast"
+    "github.com/revboss/raymond/parser"
 )
 
 fu  nc main() {
